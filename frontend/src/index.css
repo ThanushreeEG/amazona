@@ -14,12 +14,20 @@ body {
 main {
   flex: 1;
 }
+.btn-primary {
+  background-color: #ffc000;
+  color: black;
+}
 .products {
   display: flex; /* flex we can put items next to each other */
   width: 100%; /* Adjust as needed */
   height: 100%;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.rating span {
+  color: #ffc000;
 }
 
 .product {
