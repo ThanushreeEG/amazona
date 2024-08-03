@@ -24,7 +24,7 @@ main {
   display: flex; /* flex we can put items next to each other */
   width: 100%; /* Adjust as needed */
   height: 100%;
-  /flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
