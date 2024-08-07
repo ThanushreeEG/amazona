@@ -7,11 +7,11 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import ListGroup from 'react-bootstrap/ListGroup';
+import { toast } from 'react-toastify';
+import { getError } from '../utils';
 import { Store } from '../Store';
 import CheckoutSteps from '../components/CheckoutSteps';
 import LoadingBox from '../components/LoadingBox';
-import { toast } from 'react-toastify';
-import { getError } from '../utils';
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -28,6 +28,7 @@ const reducer = (state, action) => {
 
 export default function PlaceOrderScreen() {
   const navigate = useNavigate();
+
   const [{ loading }, dispatch] = useReducer(reducer, {
     loading: false,
   });
